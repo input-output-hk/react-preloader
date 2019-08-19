@@ -15,7 +15,7 @@
   "scripts": {
     "build": "npm run build:js",
     "build:demo": "webpack --config webpack_demo.config.js",
-    "build:js": "babel src --out-dir build --extensions \".js,.jsx\" --source-maps inline",
+    "build:js": "babel src --out-dir build --extensions \".js,.jsx\" --source-maps inline --copy-files",
     "deploy:demo": "./scripts/deploy_demo.sh",
     "lint": "eslint src/**/*.js demo/src/**/*.js",
     "prepublish": "npm run build",
@@ -47,6 +47,7 @@
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-react-css-modules": "^5.2.6",
     "babel-plugin-styled-components": "^1.10.0",
     "coveralls": "^3.0.4",
     "css-loader": "^3.0.0",
