@@ -13,10 +13,9 @@
     "url": "https://github.com/input-output-hk/react-preloader"
   },
   "scripts": {
-    "build": "npm run build:types && npm run build:js",
+    "build": "npm run build:js",
     "build:demo": "webpack --config webpack_demo.config.js",
     "build:js": "babel src --out-dir build --extensions \".js,.jsx\" --source-maps inline",
-    "build:types": "tsc",
     "deploy:demo": "./scripts/deploy_demo.sh",
     "lint": "eslint src/**/*.js src/**/*.jsx demo/src/**/*.js",
     "prepublish": "npm run build",
