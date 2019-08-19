@@ -1,12 +1,11 @@
 module.exports =  {
-  parser:  '@typescript-eslint/parser',  // Specifies the ESLint parser
+  parser:  'babel-eslint',  // Specifies the ESLint parser
   extends:  [
     'standard',
     'eslint:recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
-    'plugin:react/recommended',  // Uses the recommended rules from @eslint-plugin-react
-    'plugin:@typescript-eslint/recommended' // Uses the recommended rules from @typescript-eslint/eslint-plugin
+    'plugin:react/recommended'  // Uses the recommended rules from @eslint-plugin-react
   ],
   parserOptions:  {
     ecmaVersion:  2018,
@@ -17,8 +16,6 @@ module.exports =  {
   },
   rules:  {
     indent: 'off',
-    '@typescript-eslint/indent': [ 'error', 2 ],
-    '@typescript-eslint/member-delimiter-style': 'off',
     'import/no-unresolved': 'off',
     'import/named': 'error',
     'import/namespace': 'error',
