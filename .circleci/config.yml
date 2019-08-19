@@ -49,7 +49,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "b4:87:d0:1e:01:78:94:48:59:1d:c7:f8:b5:a4:a9:2f"
+            - "ef:6d:33:8f:ab:93:18:6b:8f:88:2d:80:77:98:39:c0"
       - run:
           name: Setup git config
           command: |
@@ -108,7 +108,7 @@ jobs:
           at: public/build
       - add_ssh_keys:
           fingerprints:
-            - "b4:87:d0:1e:01:78:94:48:59:1d:c7:f8:b5:a4:a9:2f"
+            - "ef:6d:33:8f:ab:93:18:6b:8f:88:2d:80:77:98:39:c0"
       - run:
           name: Setup git config
           command: |
