@@ -17,7 +17,7 @@
     "build:demo": "webpack --config webpack_demo.config.js",
     "build:js": "babel src --out-dir build --extensions \".js,.jsx\" --source-maps inline",
     "deploy:demo": "./scripts/deploy_demo.sh",
-    "lint": "eslint src/**/*.js src/**/*.jsx demo/src/**/*.js",
+    "lint": "eslint src/**/*.js demo/src/**/*.js",
     "prepublish": "npm run build",
     "prepublishOnly": "npm run lint && npm run test",
     "serve:demo": "static-server public/ -p 9090",
