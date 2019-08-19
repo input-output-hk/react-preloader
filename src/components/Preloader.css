@@ -1,0 +1,28 @@
+.parent {
+    position: relative;
+    z-index: 10;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+}
+
+:local(.container) {
+    transform: scale(0.7);
+    display: flex;
+    align-items: center;
+    perspective: 40px;
+    width: 270px;
+    height: 190px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+:local(.inner) {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
