@@ -6,7 +6,6 @@ class Preloader extends Component {
   constructor (props) {
     super(props)
 
-
     this.containerRef = React.createRef()
     this.canvas1Ref = React.createRef()
     this.canvas2Ref = React.createRef()
