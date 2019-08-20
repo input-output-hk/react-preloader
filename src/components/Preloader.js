@@ -452,8 +452,12 @@ class Preloader extends Component {
   }
 
   render () {
+
+    let parentClassName = styles.parent
+    parentClassName += typeof this.props.className !== 'undefined' ? ' ' + this.props.className : ''
+
     return (
-      <div className={styles.parent}>
+      <div className={parentClassName}>
         <div className={styles.container} ref={this.containerRef} onMouseMove={this.onMouseMove.bind(this)} onTouchMove={this.onTouchMove.bind(this)}>
           <canvas ref={this.canvas1Ref} className={styles.inner} width='300' height='210' />
           <canvas ref={this.canvas2Ref} className={styles.inner} width='300' height='210' />

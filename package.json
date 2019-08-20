@@ -1,6 +1,6 @@
 {
   "name": "@input-output-hk/react-preloader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Preloader animation using the IOHK logo",
   "main": "build/index.js",
   "homepage": "https://input-output-hk.github.io/react-preloader/",
