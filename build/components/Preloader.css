@@ -1,4 +1,4 @@
-.parent {
+:local(.parent) {
     position: relative;
     z-index: 10;
     background: #000;
