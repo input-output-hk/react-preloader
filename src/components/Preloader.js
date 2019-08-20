@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import styles from './Preloader.css'
 
@@ -468,6 +469,10 @@ class Preloader extends Component {
       </div>
     )
   }
+}
+
+Preloader.propTypes = {
+	className: PropTypes.string
 }
 
 export default Preloader
